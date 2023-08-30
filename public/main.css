@@ -630,6 +630,18 @@ video {
   top: 8rem;
 }
 
+.right-5{
+  right: 1.25rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.right-2{
+  right: 0.5rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -653,6 +665,14 @@ video {
 
 .mr-10{
   margin-right: 2.5rem;
+}
+
+.mt-\[30px\]{
+  margin-top: 30px;
+}
+
+.mt-\[20px\]{
+  margin-top: 20px;
 }
 
 .hidden{
@@ -684,6 +704,10 @@ video {
   height: 100vh;
 }
 
+.h-\[2px\]{
+  height: 2px;
+}
+
 .w-14{
   width: 3.5rem;
 }
@@ -704,9 +728,25 @@ video {
   width: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
 .max-w-fit{
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.max-w-\[1140px\]{
+  max-width: 1140px;
 }
 
 .items-center{
@@ -715,6 +755,12 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
 .overflow-y-scroll{
@@ -735,6 +781,18 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-t-4{
+  border-top-width: 4px;
+}
+
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t-\[2px\]{
+  border-top-width: 2px;
 }
 
 .border-\[\#e67e22\]{
@@ -919,12 +977,36 @@ video {
   padding-right: 2rem;
 }
 
+.py-\[80p\]{
+  padding-top: 80p;
+  padding-bottom: 80p;
+}
+
+.py-\[80px\]{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-5{
   padding-top: 1.25rem;
 }
 
 .pl-3{
   padding-left: 0.75rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-Lato{
@@ -985,6 +1067,22 @@ video {
   font-size: 220%;
 }
 
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.text-\[25px\]{
+  font-size: 25px;
+}
+
 .font-extrabold{
   font-weight: 800;
 }
@@ -1003,6 +1101,10 @@ video {
 
 .font-\[300\]{
   font-weight: 300;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-loose{
@@ -1067,6 +1169,10 @@ video {
   word-spacing: 4px;
 }
 
+.\[word-spacing\:2px\]{
+  word-spacing: 2px;
+}
+
 .marker\:p-4 *::marker{
   padding: 1rem;
 }
@@ -1083,6 +1189,14 @@ video {
   .md\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .md\:mt-28{
+    margin-top: 7rem;
   }
 
   .md\:flex{
@@ -1159,6 +1273,10 @@ video {
 
   .md\:font-\[300\]{
     font-weight: 300;
+  }
+
+  .md\:text-\[\]{
+    color: ;
   }
 }
 
