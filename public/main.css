@@ -669,6 +669,10 @@ video {
   width: 100%;
 }
 
+.w-\[\]{
+  width: ;
+}
+
 .max-w-\[1140px\]{
   max-width: 1140px;
 }
@@ -721,6 +725,11 @@ video {
   background-color: transparent;
 }
 
+.bg-\[\#f4f4f4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
 .bg-\[linear-gradient\(rgba\(0\2c 0\2c 0\2c 0\.7\)\2c rgba\(0\2c 0\2c 0\2c 0\.7\)\)\2c url\(\'\.\/assets\/img\/hero\.jpg\'\)\]{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./assets/img/hero.jpg');
 }
@@ -750,6 +759,16 @@ video {
 .py-\[80px\]{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[80p\]{
+  padding-top: 80p;
+  padding-bottom: 80p;
 }
 
 .pl-3{
