@@ -1045,6 +1045,10 @@ video {
   padding-top: 3.5rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1088,6 +1092,10 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .font-\[300\]{
@@ -1240,6 +1248,10 @@ video {
 
   .md\:text-\[50px\]{
     font-size: 50px;
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
   }
 
   @media (min-width: 1024px){
