@@ -1182,6 +1182,26 @@ video {
     height: 900px;
   }
 
+  .md\:h-auto{
+    height: auto;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-\[\]{
+    height: ;
+  }
+
+  .md\:h-\[2000px\]{
+    height: 2000px;
+  }
+
+  .md\:h-\[200px\]{
+    height: 200px;
+  }
+
   .md\:w-\[55px\]{
     width: 55px;
   }
@@ -1220,6 +1240,12 @@ video {
 
   .md\:text-\[50px\]{
     font-size: 50px;
+  }
+
+  @media (min-width: 1024px){
+    .md\:lg\:h-\[500px\]{
+      height: 500px;
+    }
   }
 }
 
