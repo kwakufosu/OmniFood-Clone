@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="./main.css" />
     <title>Omnifood-Clone</title>
     <link rel="icon" href="./assets/img/logo.png" />
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
   </head>
   <body class="font-Lato overflow-y-scroll">
     <header class="mb-[48rem] md:mb-[35rem] lg:mb-[40rem]">
@@ -683,21 +678,76 @@
     </section>
 
     <!-- Map Section -->
-    <section>
-      <div id="map" class="absolute top-0 bottom-0 w-[100%] h-[500px]"></div>
+    <section
+      class="bg-[url(https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/-122.337798,37.810550,9.67,0.00,0.00/1000x600@2x?access_token=pk.eyJ1Ijoia3dha3Vib2FjaGllZm9zdSIsImEiOiJjbGJtMDYxbjcwMzFsM29udnNiZ3R1a2dmIn0.V2DSi_rpLr57mRG3IHWGng)] opacity-60 bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="text-white bg-gray-800 opacity-80 [word-spacing:2px] tracking-[1px] text-center font-light pt-14 md:text-[25px]"
+      >
+        <h2 class="uppercase mb-[30px] text-[40px]">
+          We're happy to hear from you
+        </h2>
+        <div
+          class="h-[2px] w-[100px] mx-auto mt-[20px] mb-[40px] bg-[#e67e22]"
+        ></div>
+
+        <form action="#" method="post" class="text-[25px] max-w-fit mx-auto">
+          <div class="grid grid-cols-2 gap-x-60 mb-5">
+            <label for="name" class=" ">Name</label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="border-2 w-full mr-5 text-black border-[#ccc] p-[7px] rounded-sm"
+            />
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-60 mb-5">
+            <label for="name" class=" ">Email</label>
+            <input
+              type="text"
+              placeholder="Your Email"
+              class="border-2 w-full border-[#ccc] p-[7px] rounded-sm text-black "
+            />
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-60 mb-5">
+            <label for="name" class="">How did you find us?</label>
+            <input
+              type="text"
+              placeholder="Friends"
+              class="border-2 w-full border-[#ccc] p-[7px] rounded-sm text-black"
+            />
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-60 mb-5">
+            <label for="name" class="">Newsletter?</label>
+
+            <div>
+              <input type="checkbox" class="border-2 p-[7px] text-black" />
+              <label for="">Yes, please </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-60 ">
+            <label for="name" class="">Drop us a line</label>
+
+            <div>
+              <textarea
+                placeholder="Your Message"
+                class="border-2 w-full border-[#ccc] p-[7px] rounded-sm text-black"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            class="mt-5 rounded-full text-lg text-white py-3 px-5 bg-[#e67e22]"
+          >
+            Send it!
+          </button>
+        </form>
+      </div>
     </section>
 
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1Ijoia3dha3Vib2FjaGllZm9zdSIsImEiOiJjbGJtMDYxbjcwMzFsM29udnNiZ3R1a2dmIn0.V2DSi_rpLr57mRG3IHWGng";
-      const map = new mapboxgl.Map({
-        container: "map", // container ID
-        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: "mapbox://styles/mapbox/streets-v12", // style URL
-        center: [0.187, 5.6037], // starting position [lng, lat]
-        zoom: 9, // starting zoom
-      });
-    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
