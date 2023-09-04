@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./main.css" />
     <title>Omnifood-Clone</title>
     <link rel="icon" href="./assets/img/logo.png" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
   </head>
   <body class="font-Lato overflow-y-scroll">
     <header class="mb-[48rem] md:mb-[35rem] lg:mb-[40rem]">
@@ -527,8 +532,10 @@
           class="h-[2px] w-[100px] mx-auto mt-[20px] mb-[40px] bg-[#e67e22]"
         ></div>
 
-        <div class="font-light grid-cols-3 md:gap-x-20 md:grid ">
-          <div class="mb-8 border-2 rounded border-[#e67e22] p-2 md:mb-0 bg-[#fcfcfc]">
+        <div class="font-light grid-cols-3 md:gap-x-20 md:grid">
+          <div
+            class="mb-8 border-2 rounded border-[#e67e22] p-2 md:mb-0 bg-[#fcfcfc]"
+          >
             <h3 class="uppercase text-[100%] mt-[15px]">Premium</h3>
             <p class="text-[#e67e22] text-[60px] mb-3">
               $399 <span class="text-[15px]">/month</span>
@@ -556,7 +563,7 @@
                 ></ion-icon
                 >Access to newest creations
               </li>
-              <li class="pb-2 border-b-2 border-[#f4f4f4] ">
+              <li class="pb-2 border-b-2 border-[#f4f4f4]">
                 <ion-icon
                   name="checkmark-circle"
                   class="w-[30px] text-center align-middle text-[#e67e22]"
@@ -575,7 +582,9 @@
           </div>
 
           <!-- 2nd card -->
-          <div class="mb-8 border-2 rounded border-[#e67e22] bg-[#fcfcfc] p-2 md:mb-0">
+          <div
+            class="mb-8 border-2 rounded border-[#e67e22] bg-[#fcfcfc] p-2 md:mb-0"
+          >
             <h3 class="uppercase text-[100%] mt-[15px]">Pro</h3>
             <p class="text-[#e67e22] text-[60px] mb-3">
               $149 <span class="text-[15px]">/month</span>
@@ -603,7 +612,7 @@
                 ></ion-icon
                 >Access to newest creations
               </li>
-              <li class="pb-2 border-b-2 border-[#f4f4f4] ">
+              <li class="pb-2 border-b-2 border-[#f4f4f4]">
                 <ion-icon
                   name="checkmark-circle"
                   class="w-[30px] text-center align-middle mr-1 text-[#e67e22]"
@@ -622,7 +631,9 @@
           </div>
 
           <!-- 3rd card -->
-          <div class="mb-8 border-2 rounded border-[#e67e22] bg-[#fcfcfc] p-2 md:mb-0">
+          <div
+            class="mb-8 border-2 rounded border-[#e67e22] bg-[#fcfcfc] p-2 md:mb-0"
+          >
             <h3 class="uppercase text-[100%] mt-[15px]">Starter</h3>
             <p class="text-[#e67e22] text-[60px] mb-3">
               $19 <span class="text-[15px]">/month</span>
@@ -650,7 +661,7 @@
                 ></ion-icon
                 >Access to newest creations
               </li>
-              <li class="pb-2 border-b-2 border-[#f4f4f4] ">
+              <li class="pb-2 border-b-2 border-[#f4f4f4]">
                 <ion-icon
                   name="checkmark-circle"
                   class="w-[30px] text-center align-middle mr-1 text-[#e67e22]"
@@ -671,6 +682,22 @@
       </div>
     </section>
 
+    <!-- Map Section -->
+    <section>
+      <div id="map" class="absolute top-0 bottom-0 w-[100%] h-[500px]"></div>
+    </section>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoia3dha3Vib2FjaGllZm9zdSIsImEiOiJjbGJtMDYxbjcwMzFsM29udnNiZ3R1a2dmIn0.V2DSi_rpLr57mRG3IHWGng";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: "mapbox://styles/mapbox/streets-v12", // style URL
+        center: [0.187, 5.6037], // starting position [lng, lat]
+        zoom: 9, // starting zoom
+      });
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

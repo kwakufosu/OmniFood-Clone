@@ -594,6 +594,14 @@ video {
   top: 8rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -759,6 +767,30 @@ video {
 
 .h-auto{
   height: auto;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[100px\]{
+  height: 100px;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
+}
+
+.h-\[900px\]{
+  height: 900px;
+}
+
+.h-\[00px\]{
+  height: 00px;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .w-14{
