@@ -4,3 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.hover-img{
+    @apply  hover:opacity-100 hover:scale-[1.01] hover:duration-500 
+  }
