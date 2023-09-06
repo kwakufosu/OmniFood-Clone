@@ -578,12 +578,20 @@ video {
   position: relative;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .bottom-20{
   bottom: 5rem;
 }
 
 .right-0{
   right: 0px;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-3{
