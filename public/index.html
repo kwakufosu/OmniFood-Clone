@@ -24,6 +24,7 @@
           />
 
           <ul
+            id="nav_items"
             class="hidden relative bottom-20 max-w-fit mx-auto text-white md:flex 4 md:bottom-0 md:max-w-none md:mx-0"
           >
             <li class="md:p-3"><a href="#">FOOD DELIVERY</a></li>
@@ -33,17 +34,34 @@
           </ul>
 
           <svg
+            id="menu"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="absolute w-14 h-24 right-0 top-3 md:hidden"
+            class="absolute w-14 h-24 right-0 top-3 text-white md:hidden"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            id="close"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="hidden absolute w-14 h-24 right-0 top-3 text-white  md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
             />
           </svg>
         </div>
@@ -190,7 +208,7 @@
             <img
               src="./assets/img/app-iPhone.png"
               alt=""
-              class="w-[250px] text-right pr-[3%] "
+              class="w-[250px] text-right pr-[3%]"
             />
           </div>
 
@@ -270,7 +288,7 @@
               <img
                 src="./assets/img/lisbon-3.jpg"
                 alt=""
-                class="w-[100%] h-auto "
+                class="w-[100%] h-auto"
               />
             </div>
             <h3 class="uppercase text-[120%] mb-[10px]">Lisbon</h3>
@@ -691,8 +709,8 @@
           class="h-[2px] w-[100px] mx-auto mt-[20px] mb-[40px] bg-[#e67e22]"
         ></div>
 
-        <form action="#" method="post" class="text-[25px] max-w-fit mx-auto">
-          <div class="grid grid-cols-2 gap-x-60 mb-5">
+        <form action="#" method="post" class="container mx-auto text-[25px]">
+          <div class="grid grid-cols-2 mb-5">
             <label for="name" class=" ">Name</label>
             <input
               type="text"
@@ -701,7 +719,7 @@
             />
           </div>
 
-          <div class="grid grid-cols-2 gap-x-60 mb-5">
+          <div class="grid grid-cols-2 mb-5">
             <label for="name" class=" ">Email</label>
             <input
               type="text"
@@ -710,7 +728,7 @@
             />
           </div>
 
-          <div class="grid grid-cols-2 gap-x-60 mb-5">
+          <div class="grid grid-cols-2 mb-5">
             <label for="name" class="">How did you find us?</label>
             <input
               type="text"
@@ -719,7 +737,7 @@
             />
           </div>
 
-          <div class="grid grid-cols-2 gap-x-60 mb-5">
+          <div class="grid grid-cols-2 mb-5">
             <label for="name" class="">Newsletter?</label>
 
             <div>
@@ -728,7 +746,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-x-60">
+          <div class="grid grid-cols-2">
             <label for="name" class="">Drop us a line</label>
 
             <div>
@@ -789,5 +807,23 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- close-menu -->
+    <script>
+      const $menu = document.getElementById("menu");
+      const $close = document.getElementById("close");
+
+      $menu.addEventListener("click", () => {
+        nav_items.classList.toggle("hidden");
+        $menu.classList.add("hidden");
+        $close.classList.toggle("hidden");
+      });
+
+      $close.addEventListener("click", () => {
+        nav_items.classList.toggle("hidden");
+        $close.classList.toggle("hidden");
+        $menu.classList.remove("hidden");
+      });
+    </script>
   </body>
 </html>
